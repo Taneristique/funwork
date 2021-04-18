@@ -1,0 +1,102 @@
+/*
+    Copyright 2021 Taneristique.
+    SPDX-License-Identifier: Apache-2.0
+*/
+*{
+    box-sizing: border-box;
+}
+:root {
+    --black: #000000;
+    --darkred: #420a0a; 
+  }
+body{
+    background-color:#000000;
+    margin: auto;
+    animation : themecolor 10s linear 5s infinite alternate;
+
+}
+
+.banner{
+    display: grid;
+    height: 50vh;
+    background-image: url('https://avatars.githubusercontent.com/u/48108872?s=400&u=84acb5787f1f61695301a7a766cc5c022e0203c8&v=4');
+    background-size: cover;
+    place-items: center;
+    background-color: black;
+    color:#ffff;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fun{
+    font-style: italic;
+    font-size: 5em;
+    animation:colorchange 10s linear 2s infinite alternate;
+}
+@keyframes colorchange{
+    0% {color:#ffff;}
+    25%{color:rgb(206, 116, 116);}
+    50%{color:rgb(175, 224, 12);}
+    75%{color:rgb(33, 189, 59);}
+    100%{color:rgb(73, 9, 17);}
+
+}
+.container{
+    display: flex;
+    position: relative;
+    top:1vh;
+    flex-direction: column;
+    order: 1;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    animation : themecolor 10s linear 5s infinite alternate;
+}
+
+@keyframes themecolor{
+    0% {background-color: var(--darkred);}
+    25%{background-color:var(--black);}
+    50%{background-color:var(--darkred);}
+    75%{background-color:var(--black);}
+    100%{background-color:var(--darkred);}
+}
+.container>div{
+    padding-top: 10vh;
+    width: 75%;
+    background-color: white;
+    text-overflow: auto;
+    font-size:1.2em;
+    padding-left: 5px;
+}
+
+.about_author{
+    display: grid;
+    place-items: center;
+}
+.author_icon{
+    display: grid;
+    width: 25%;
+    height: 25vh;
+    background-color: rgb(0, 0, 0);   
+    clip-path: circle(); 
+    background-image: url('https://avatars.githubusercontent.com/u/48108872?s=400&u=84acb5787f1f61695301a7a766cc5c022e0203c8&v=4');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.existentialiste{
+    display: flex;
+    text-align-last: center;
+}
+strong{
+    color:red;
+}
+
+@media screen and (max-device-width:600px) { /*for small phones*/
+    .fun{
+        font-size: 2.7em;
+    }
+    .author_icon{
+        width: 75%;
+        height: 75vh;
+    }
+}
