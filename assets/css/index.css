@@ -46,7 +46,6 @@ body{
     position: relative;
     top:1vh;
     flex-direction: column;
-    order: 1;
     justify-content: center;
     align-items: center;
     background-color: #000000;
