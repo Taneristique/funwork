@@ -1,0 +1,1 @@
+This is nothing more than a fun-work project.This template calls funwork and designed by Taneristique.If you want to use this template's code use it with copyright claim but anyway it is nothing more than a fun-project which is experimental and done to better understand css.
